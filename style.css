@@ -38,13 +38,6 @@ body {
   border-image-slice: 1;
 }
 
-#divider {
-  background: url(images/sdv_divider.png) center;
-  width: 100%;
-  height: 541px;
-  margin-top: -280px;
-}
-
 #content {
   flex: 1 0 auto;
 }
