@@ -42,7 +42,8 @@ body {
   flex: 1 0 auto;
 }
 
-#first-content {
+#first-content,
+#second-content {
   background-color: #ffffff;
   padding: 5rem 0rem;
 }
