@@ -1,0 +1,91 @@
+.panel,
+.panel_layer {
+  height: 970px;
+  width: 100%;
+  position: fixed;
+}
+
+#parallax {
+  height: 970px;
+  z-index: -20;
+  background: #0069cd;
+}
+
+.panel {
+  position: relative;
+  z-index: 10;
+  margin-bottom: 0px;
+  border: 0.1px solid transparent;
+}
+
+.pixelated {
+  image-rendering: optimizeSpeed; /* STOP SMOOTHING, GIVE ME SPEED  */
+  image-rendering: -moz-crisp-edges; /* Firefox                        */
+  image-rendering: -o-crisp-edges; /* Opera                          */
+  image-rendering: -webkit-optimize-contrast; /* Chrome (and eventually Safari) */
+  image-rendering: pixelated; /* Chrome                         */
+  image-rendering: optimize-contrast; /* CSS3 Proposed                  */
+  -ms-interpolation-mode: nearest-neighbor; /* IE8+                           */
+}
+
+.parallax__layer {
+  background-position: bottom center;
+  background-size: auto 970px;
+  background-repeat: repeat-x;
+  width: 100%;
+  position: absolute;
+}
+.parallax__layer.parallax {
+  position: fixed;
+}
+
+#layer-1 {
+  background-image: url('../images/parallax1.png'); /* Background Gradient   */
+  background-color: #000000;
+  position: absolute;
+}
+#layer-2 {
+  background-image: url('../images/parallax2.png'); /* Stars                 */
+  position: absolute;
+}
+#layer-3a {
+  background-image: url('../images/parallax3a.png'); /* Small Clouds          */
+  animation: slide 80s linear infinite;
+  opacity: 0.2;
+}
+#layer-3b {
+  background-image: url('../images/parallax3b.png'); /* Big Clouds             */
+  animation: slide 80s linear infinite;
+  opacity: 0.2;
+}
+#layer-4 {
+  background-image: url('../images/parallax4.png'); /* Mountains 1           */
+  background-position: bottom center;
+}
+#layer-5 {
+  background-image: url('../images/parallax5.png'); /* Mountains 2           */
+  background-position: bottom center;
+}
+#layer-6 {
+  background-image: url('../images/parallax6.png'); /* Mountains 3           */
+  background-position: bottom center;
+}
+#layer-7 {
+  background-image: url('../images/parallax7.png'); /* Mountains 4           */
+  background-position: bottom center;
+}
+#layer-8 {
+  background-image: url('../images/parallax8.png'); /* Mountains 5           */
+  background-position: bottom center;
+}
+#layer-9 {
+  background-image: url('../images/parallax9.png'); /* Tree Bottom Left      */
+  background-position: bottom left;
+  background-repeat: no-repeat;
+}
+#layer-10 {
+  background-image: url('../images/parallax10.png'); /* Tree Bottom Right     */
+  background-position: bottom right;
+  background-repeat: no-repeat;
+}
+

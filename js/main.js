@@ -1,5 +1,6 @@
 $(document).ready(function($) {
   castParallax();
+  handleHeaderSize();
 });
 
 function castParallax() {
@@ -17,4 +18,14 @@ function castParallax() {
       });
     });
   }
+}
+
+function handleHeaderSize() {
+  window.addEventListener("scroll", () => {
+    if (this.scrollY >= 100 ) {
+      document.querySelector(".navbar-brand img").style = "width: 50px;";
+    } else {
+      document.querySelector(".navbar-brand img").style = "";
+    }
+  });
 }
