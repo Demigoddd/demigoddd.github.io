@@ -46,3 +46,9 @@
     color: rgb(255, 0, 127);
   }
 }
+
+@keyframes loader {
+  100% {
+    transform: rotate(1turn)
+  }
+}

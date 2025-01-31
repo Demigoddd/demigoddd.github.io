@@ -3,6 +3,10 @@ $(document).ready(function($) {
   handleHeaderSize();
 });
 
+$(window).on("load",function(){
+  $("#preloader").fadeOut(1000);
+});
+
 function castParallax() {
   if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
     return;

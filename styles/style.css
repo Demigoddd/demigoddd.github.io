@@ -31,6 +31,38 @@ a:hover,
   animation: rainbow 1.5s linear infinite;
 }
 
+#preloader {
+  background-color: dodgerblue;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  z-index: 10000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#preloader div {
+  width: 100px;
+  aspect-ratio: 1;
+  display: grid;
+  border-radius: 50%;
+  background: conic-gradient(#25b09b 25%,#f03355 0 50%,#514b82 0 75%,#ffa516 0);
+  animation: loader 2s infinite linear;
+}
+#preloader div::before,
+#preloader div::after {
+   content: "";
+   grid-area: 1/1;
+   margin: 15%;
+   border-radius: 50%;
+   background: inherit;
+   animation: inherit;
+}
+#preloader div::after {
+   margin: 25%;
+   animation-duration: 3s;
+}
 
 /* header styles */
 header {
@@ -106,7 +138,7 @@ header {
 }
 
 .content-second-text {
-  background-color: white;
+  background: linear-gradient(180deg,#00aaff,#ffffff4f);
   font-size: 32px;
   padding: 1rem;
   margin-bottom: 1rem;
@@ -167,4 +199,11 @@ header {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.content-third-text {
+  background: linear-gradient(180deg,#fff,#ffffff4f);
+  font-size: 32px;
+  padding: 1rem;
+  margin-bottom: 1rem;
 }
