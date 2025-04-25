@@ -1,6 +1,5 @@
 import { useRef, useEffect } from 'react';
 import logo from '@/assets/logo.png';
-import './header.css';
 
 const Header: React.FC = () => {
   const headerImageRef = useRef<HTMLImageElement | null>(null);
@@ -25,22 +24,24 @@ const Header: React.FC = () => {
 
   return (
     <header className="fixed top-0 left-0 w-full z-50 backdrop-blur-[100px]">
-      <div id="header-bar"></div>
+      <div
+        className="border-t-4 border-solid"
+        style={{ borderImage: "linear-gradient(90deg, #d32e9d, #8ed6fb 50%, #5d2f86) 1" }}
+      />
 
       <div className="flex flex-row justify-between items-center px-4">
-        <a href="#parallax">
-          <img ref={headerImageRef} className="w-[100px] transition-all duration-700" src={logo} alt="" width="100px" />
+        <a className="hover-rainbow" href="#parallax">
+          <img ref={headerImageRef} className="w-[90px] transition-all duration-700" src={logo} alt="" width="100px" />
         </a>
 
         <div className="flex flex-row gap-4 text-xl text-white">
-          <a href="#content-first">First</a>
-          <a href="#content-second">Second</a>
-          <a href="#content-third">Third</a>
+          <a className="hover-rainbow" href="#content-first">First</a>
+          <a className="hover-rainbow" href="#content-second">Second</a>
+          <a className="hover-rainbow" href="#content-third">Third</a>
         </div>
 
-        <a href="https://github.com/Demigoddd" target="_blank">
+        <a className="hover-rainbow" href="https://github.com/Demigoddd" target="_blank">
           <svg
-            id="github-icon"
             className="w-12"
             role="img"
             viewBox="0 0 24 24"

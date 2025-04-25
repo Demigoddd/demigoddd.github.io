@@ -10,7 +10,6 @@ import parallax7 from '@/assets/parallax7.png';
 import parallax8 from '@/assets/parallax8.png';
 import parallax9 from '@/assets/parallax9.png';
 import parallax10 from '@/assets/parallax10.png';
-import './parallax.css';
 
 const Parallax: React.FC = () => {
   useEffect(() => {
@@ -38,19 +37,19 @@ const Parallax: React.FC = () => {
 
   return (
     <div id="parallax" className="panel">
-      <div className="panel_layer pixelated" id="layer-1" style={{ backgroundImage: `url(${parallax1})` }}></div>
-      <div className="panel_layer pixelated" id="layer-2" style={{ backgroundImage: `url(${parallax2})` }}></div>
-      <div className="panel_layer parallax pixelated parallax-transform" id="layer-3a" data-speed="15" style={{ backgroundImage: `url(${parallax3a})` }}></div>
-      <div className="panel_layer parallax pixelated parallax-transform" id="layer-3b" data-speed="15" style={{ backgroundImage: `url(${parallax3b})` }}></div>
-      <div className="panel_layer parallax pixelated parallax-transform" id="layer-4" data-speed="65" style={{ backgroundImage: `url(${parallax4})` }}></div>
-      <div className="panel_layer parallax pixelated parallax-transform" id="layer-5" data-speed="70" style={{ backgroundImage: `url(${parallax5})` }}></div>
-      <div className="panel_layer parallax pixelated parallax-transform" id="layer-6" data-speed="78" style={{ backgroundImage: `url(${parallax6})` }}></div>
-      <div className="panel_layer parallax pixelated parallax-transform" id="layer-7" data-speed="89" style={{ backgroundImage: `url(${parallax7})` }}></div>
-      <div className="panel_layer parallax pixelated parallax-transform" id="layer-8" data-speed="100" style={{ backgroundImage: `url(${parallax8})` }}><div id="bird"></div></div>
-      <div className="panel_layer parallax pixelated parallax-transform" id="layer-9" data-speed="100" style={{ backgroundImage: `url(${parallax9})` }}></div>
-      <div className="panel_layer parallax pixelated parallax-transform" id="layer-10" data-speed="100" style={{ backgroundImage: `url(${parallax10})` }}></div>
-      <div className="panel_layer pixelated" id="layer-13" data-speed="100"></div>
-      <div className="panel_layer pixelated" id="layer-12" data-speed="100"></div>
+      <div className="panel_layer bg-[#0069cd] absolute" id="layer-1" style={{ backgroundImage: `url(${parallax1})`, transform: 'translate3d(0px, 0px, 0px)' }}></div>
+      <div className="panel_layer absolute" id="layer-2" style={{ backgroundImage: `url(${parallax2})`, transform: 'translate3d(0px, 0px, 0px)' }}></div>
+      <div className="panel_layer parallax layer-slide" id="layer-3a" data-speed="15" style={{ backgroundImage: `url(${parallax3a})`, transform: 'translate3d(0px, 0px, 0px)' }}></div>
+      <div className="panel_layer parallax layer-slide" id="layer-3b" data-speed="15" style={{ backgroundImage: `url(${parallax3b})`, transform: 'translate3d(0px, 0px, 0px)' }}></div>
+      <div className="panel_layer parallax bg-bottom-center" id="layer-4" data-speed="65" style={{ backgroundImage: `url(${parallax4})`, transform: 'translate3d(0px, 0px, 0px)' }}></div>
+      <div className="panel_layer parallax bg-bottom-center" id="layer-5" data-speed="70" style={{ backgroundImage: `url(${parallax5})`, transform: 'translate3d(0px, 0px, 0px)' }}></div>
+      <div className="panel_layer parallax bg-bottom-center" id="layer-6" data-speed="78" style={{ backgroundImage: `url(${parallax6})`, transform: 'translate3d(0px, 0px, 0px)' }}></div>
+      <div className="panel_layer parallax bg-bottom-center" id="layer-7" data-speed="89" style={{ backgroundImage: `url(${parallax7})`, transform: 'translate3d(0px, 0px, 0px)' }}></div>
+      <div className="panel_layer parallax bg-bottom-center" id="layer-8" data-speed="100" style={{ backgroundImage: `url(${parallax8})`, transform: 'translate3d(0px, 0px, 0px)' }}></div>
+      <div className="panel_layer parallax bg-bottom-left bg-no-repeat" id="layer-9" data-speed="100" style={{ backgroundImage: `url(${parallax9})`, transform: 'translate3d(0px, 0px, 0px)' }}></div>
+      <div className="panel_layer parallax bg-bottom-right bg-no-repeat" id="layer-10" data-speed="100" style={{ backgroundImage: `url(${parallax10})`, transform: 'translate3d(0px, 0px, 0px)' }}></div>
+      <div className="panel_layer" id="layer-13" data-speed="100" style={{ transform: 'translate3d(0px, 0px, 0px)' }}></div>
+      <div className="panel_layer" id="layer-12" data-speed="100" style={{ transform: 'translate3d(0px, 0px, 0px)' }}></div>
     </div>
   );
 };
